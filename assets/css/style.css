@@ -1,0 +1,578 @@
+        body {
+            /* background-color: black; */
+            overflow-x: hidden;
+            padding: 0;
+            margin: 0;
+            transition: .5s;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+        
+        header {
+            position: relative;
+        }
+        
+        .navbar-brand {
+            font-family: 'kaushan_scriptregular';
+            color: #fed136 !important;
+            letter-spacing: 13px;
+            font-size: 1.5rem;
+        }
+        
+        nav.navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            width: 100%;
+            z-index: 99999;
+        }
+        
+        nav li a {
+            color: white !important;
+            text-transform: uppercase;
+        }
+        
+        .nav-item {
+            margin-right: 10px;
+        }
+        
+        .nav-link {
+            padding: 1.1em 1em !important;
+            font-size: 90%;
+            font-weight: 400;
+            padding: 0.75em 0;
+            letter-spacing: 1px;
+            color: white;
+            font-family: 'Montserrat' !important;
+        }
+        
+        .nav-item,
+        .nav-link {
+            transition: .5s;
+        }
+        
+        .nav-item {
+            border: 1px solid rgba(0, 0, 0, 0);
+        }
+        
+        .nav-item:hover {
+            color: #fed136 !important;
+            border-bottom: 1px solid #fed136;
+            transition: border .5s;
+        }
+        
+        .nav-item:hover .nav-link {
+            color: #fed136 !important;
+        }
+        
+        .section-heading {
+            height: 100vh;
+            text-align: center;
+            position: relative;
+            top: 0;
+            /* background-image: url(../imgs/heading-img-lg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover; */
+        }
+        
+        .section-heading::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            /* opacity: 0.6; */
+            background-image: url(../imgs/heading-img-lg.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            background-position: center center;
+            background-size: cover;
+        }
+        
+        .rise-box {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white !important;
+            bottom: 20vh;
+        }
+        
+        .rise-box p {
+            font-family: 'Droid Serif';
+            color: white;
+            font-size: 40px;
+            font-style: italic;
+            line-height: 1;
+        }
+        
+        .rise-box h1 {
+            font-size: 75px;
+            font-weight: 700;
+            line-height: 75px;
+            margin-bottom: 50px;
+            font-family: 'Montserrat';
+        }
+        
+        .btn-yellow {
+            background-color: #fed136;
+            border: 1px solid #fed136;
+            border-radius: 5px;
+            color: white;
+            font-family: 'Montserrat';
+            transition: .5s;
+            outline: none !important;
+        }
+        
+        .viewall {
+            color: black;
+            font-weight: 1500;
+            font-size: 1.0rem;
+            border-width: 2px;
+            padding: 10px 20px;
+            transition: .5s;
+            border-radius: 5px;
+        }
+        
+        .viewall:hover {
+            background-color: #fed136;
+            color: white;
+        }
+        
+        a {
+            text-decoration: none !important;
+            text-transform: none;
+        }
+        
+        .text-28 {
+            color: #282828;
+        }
+        
+        .btn-yellow:hover {
+            color: white;
+        }
+        
+        .btn-yellow-white {
+            background-color: white;
+            border: 2px solid #fed136;
+            border-radius: 5px;
+            font-weight: 700;
+            color: #282828;
+            font-family: 'Montserrat';
+            transition: .5s;
+            outline: none !important;
+        }
+        
+        .btn-yellow-white:hover {
+            background-color: #fed136;
+            border: 2px solid #fed136;
+            color: white;
+        }
+        
+        .section-about p {
+            font-family: 'Montserrat';
+            text-align: justify;
+            font-size: 18px;
+            line-height: 2;
+        }
+        
+        .section-title {
+            font-size: 40px;
+            font-family: 'Montserrat';
+            font-weight: 700;
+        }
+        
+        .section-subtitle {
+            font-size: 16px;
+            font-weight: 400;
+            font-style: italic;
+            text-transform: none;
+            font-family: 'Droid Serif';
+            color: #6c757d!important;
+            letter-spacing: 2px;
+        }
+        
+        .section-hr {
+            width: 30px;
+        }
+        
+        .punig {
+            font-size: 20px;
+            letter-spacing: 5px;
+            /* color: #fed136; */
+        }
+        
+        .border-left-yellow {
+            border-left: 2px solid #fed136;
+        }
+        
+        .text-yellow {
+            color: #fed136;
+        }
+        
+        .font-weight-600 {
+            font-weight: 600 !important;
+        }
+        
+        .section-ourmusic,
+        .theband,
+        .footer {
+            background-color: #f8f9fa!important
+        }
+        
+        .theband .band-member .band-img-wrapper {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative !important;
+            border: 7px solid rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        
+        .theband .band-member .band-img-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        iframe,
+        .card-img-top {
+            min-height: 170px !important;
+            /* height: 200px !important; */
+            object-fit: cover;
+        }
+        
+        .band-member h1 {
+            font-size: 25px;
+            font-weight: 700;
+            font-family: 'Montserrat';
+        }
+        
+        .social-icons ul {
+            list-style: none;
+            display: inline;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .social-icons ul li a {
+            font-size: 23px;
+            line-height: 50px;
+            display: block;
+            width: 50px;
+            height: 50px;
+            transition: all 0.3s;
+            color: white;
+            border-radius: 100%;
+            outline: none;
+            background-color: #212529;
+            transition: .5s;
+        }
+        
+        .social-icons ul li {
+            display: inline-block;
+        }
+        
+        .social-icons a.fb:hover {
+            border-color: #3b5998;
+            background-color: #3b5998;
+        }
+        
+        .social-icons a.tw:hover {
+            border-color: #00aced;
+            background-color: #00aced;
+        }
+        
+        .social-icons a.ig:hover {
+            border-color: #FE1F49;
+            background-color: #FE1F49;
+        }
+        
+        .social-icons a.yt:hover {
+            border-color: #bb0000;
+            background-color: #bb0000;
+        }
+        
+        .social-icons a.li:hover {
+            border-color: #0077b5;
+            background-color: #0077b5;
+        }
+        /* slider */
+        
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        
+        .img-wrapper {
+            position: relative !important;
+        }
+        
+        .img-wrapper img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            height: 450px;
+        }
+        
+        @media (max-width: 991.98px) {
+            .border-md {
+                border-left: 2px solid #fed136 !important;
+            }
+        }
+        
+        @media (max-width: 575.98px) {
+            .border-left-yellow,
+            .border-md {
+                border-left: none !important;
+            }
+            .footer h1 {
+                font-size: 14px;
+                line-height: 1.2;
+            }
+            .fb_iframe_widget_fluid span {
+                height: 171px !important;
+            }
+            .punig {
+                font-size: 18px;
+            }
+            .section-title {
+                font-size: 28px;
+            }
+            .section-subtitle {
+                font-size: 14px;
+            }
+            .band-member h1 {
+                font-size: 20px;
+            }
+            .img-wrapper img {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+                height: 250px;
+            }
+            .rise-box h1 {
+                font-size: 40px;
+                line-height: 40px;
+            }
+            .rise-box p {
+                font-size: 30px;
+            }
+            .btn-yellow,
+            .btn-yellow-white {
+                font-size: 12px;
+            }
+            .rise-box {
+                position: unset;
+                top: unset;
+                bottom: unset;
+                transform: none;
+                left: unset;
+            }
+            .rise-box-upper {
+                position: absolute;
+                top: 38vh;
+                width: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .rise-box-lower {
+                position: absolute;
+                left: 50%;
+                width: 100%;
+                bottom: 5vh;
+                transform: translateX(-50%);
+            }
+            .navbar-brand {
+                font-size: 20px;
+            }
+        }
+        
+        @media (max-width: 767.98px) {}
+        
+        @media (max-width: 1199.98px) {}
+        
+        .social-widget li {
+            display: inline-block;
+            font-family: sans-serif;
+            font-weight: 500;
+        }
+        
+        .social-button {
+            width: 300px;
+            padding: 10px;
+            letter-spacing: 1px;
+            margin: 10px;
+        }
+        
+        .social-text {
+            width: 150px;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            padding-left: 10px;
+        }
+        
+        .right-text {
+            padding-left: 10px;
+            font-size: 12px;
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+        }
+        
+        .social-widget .fab {
+            color: white;
+            width: 30px;
+            text-align: center;
+        }
+        
+        .facebook {
+            text-decoration: none;
+            color: white;
+            background-color: #385998;
+        }
+        
+        .instagram {
+            color: white;
+            text-decoration: none;
+            background-color: #e4405f;
+        }
+        
+        .youtube {
+            color: white;
+            text-decoration: none;
+            background-color: #cd201f;
+        }
+        
+        .social-button li a {
+            color: white !important;
+            font-family: 'Montserrat';
+        }
+        
+        .social-widget ul {
+            transform: scale(1.0);
+            transition: .5s;
+            cursor: pointer !important;
+        }
+        
+        .social-widget ul:hover {
+            transform: scale(1.05);
+        }
+        
+        svg path {
+            fill: #fed136;
+        }
+        
+        .footer h1 {
+            font-family: 'Montserrat';
+            font-size: 16px;
+        }
+        
+        .contactus a {
+            color: black;
+            font-family: 'Montserrat';
+            font-weight: 500;
+            text-decoration: none !important;
+            text-transform: none !important;
+        }
+        
+        .footer .social-icons ul li a:hover {
+            border-color: #fed136 !important;
+            background-color: #fed136 !important;
+        }
+        
+        .navbar {
+            transition: .5s;
+        }
+        
+        .navbar.scrolled {
+            background-color: #212529 !important;
+            padding-top: 8px;
+            padding-bottom: 8px;
+        }
+        
+        .custom-burger {
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .custom-burger span {
+            display: block;
+            border: 1px solid #fed136;
+            width: 30px;
+            border-radius: 10px;
+            margin: 5px 0;
+            height: 1px;
+        }
+        
+        .border-md {
+            border: none;
+        }
+        
+        .custom-burger-collapse {
+            background: #fed136;
+            z-index: 99;
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            transform: translateX(100%);
+            transition: .4s;
+        }
+        
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        
+        .close-menu i {
+            color: white !important;
+            transform: scale(1.6);
+        }
+        
+        .custom-burger-collapse.show {
+            transform: translateX(0);
+        }
+        
+        .custom-burger-collapse ul li a {
+            font-weight: bold;
+            font-size: 18px;
+        }
