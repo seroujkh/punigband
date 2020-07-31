@@ -48,12 +48,3 @@ $('.custom-burger, .close-menu').on('click', function() {
     burgerMenu.toggleClass('show');
 
 });
-$(window).on('load', function(e) {
-    if (window.location.hash) {
-        e.stopPropagation();
-        var hash = window.location.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top - 140.66
-        }, 500);
-    }
-});
