@@ -9,7 +9,19 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.s-link {
+  color: black;
+}
+.s-link:hover {
+  color: black;
+}
+.hover-yellow {
+  transition: .5s;
+}
+.hover-yellow:hover {
+  color: #fed136;
 
+}
 h1,
 h2,
 h3,
